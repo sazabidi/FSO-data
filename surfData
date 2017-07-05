@@ -1,0 +1,33 @@
+public.cfuser = cf_user()
+
+# Choose the datatypes
+daily.wind.rain.dt = cf_datatype(c(2, 3), c(1, 1), list(4, 1), c(1, NA))
+
+# Choose the Reefton EWS station
+reefton.st = cf_station()
+
+# Send the query to CliFlo and retrieve the data
+daily.datalist = cf_query(user = public.cfuser, 
+                          datatype = daily.wind.rain.dt, 
+                          station = reefton.st,
+                          start_date = "2012-01-01 00",
+                          end_date = "2013-01-01 00")
+#> connecting to CliFlo...
+#> reading data...
+#> UserName is = public
+#> Number of charged rows output = 0
+#> Number of free rows output = 732
+#> Total number of rows output = 732
+#> Copyright NIWA 2017 Subject to NIWA's Terms and Conditions
+#> See: http://cliflo.niwa.co.nz/pls/niwp/doc/terms.html
+#> Comments to: cliflo@niwa.co.nz
+
+# Have a look at what data is now available
+daily.datalist
+#> List containing clifro data frames:
+#>               data      type              start                end rows
+#> df 1) Surface Wind  9am only (2012-01-01  9:00) (2012-12-31  9:00)  366
+#> df 2)         Rain     Daily (2012-01-01  9:00) (2012-12-31  9:00)  366
+
+# Plot the data using default plotting methods
+plot(daily.datalist)     # For the first dataframe  (Surface Wind)
