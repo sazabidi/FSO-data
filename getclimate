@@ -1,0 +1,10 @@
+# Install the latest CRAN release
+install.packages("clifro")
+
+# Or the latest development version
+if(!require(devtools))
+  install.packages("devtools")
+devtools::install_github("ropensci/clifro")
+
+# Then load the package
+library(clifro)
