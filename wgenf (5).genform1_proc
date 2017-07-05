@@ -1,0 +1,20 @@
+Station information:
+Name	Agent Number	Network Number	Latitude (dec.deg)	Longitude (dec.deg)	Height (m)	Posn_Precision	Observing Authority
+Coromandel	1513	B65752	-36.736	175.502	100	T	N/A
+Note: Position precision types are: "W" = based on whole minutes, "T" = estimated to tenth minute,
+"G" = derived from gridref , "E" = error cases derived from gridref,
+"H" = based on GPS readings (NZGD49), "D" = by definition i.e. grid points.
+
+Rain: Breakpoints from Rain Rate
+Station	Date(NZST)	Time(NZST)_Incl_secs	Amount(mm)	Period(min)	Freq
+
+NB: contains time resolutions in seconds. If in Excel ensure date format displays seconds.
+No rows? See this help link <http://cliflo.niwa.co.nz/pls/niwp/wh.do_help?id=nodata> for possible reasons
+
+UserName is = sazabidi
+Total number of rows output = 0
+Number of rows remaining in subscription = 2000000
+Copyright NIWA 2017 Subject to NIWA's Terms and Conditions
+See: http://cliflo.niwa.co.nz/pls/niwp/doc/terms.html
+Comments to: cliflo@niwa.co.nz
+
