@@ -1,0 +1,2 @@
+# Create a clifro user
+me_cfuser = cf_user(username = "sazabidi", password = "srz2435")
